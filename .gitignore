@@ -1,52 +1,55 @@
-# Prerequisites
-*.d
+#include <stdio.h>
+#include <stdlib.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main()
+{
+    float x,y,z,h;
+    int q=0;
+    while(q<100000){
+    printf("que operacion desea hacer:\n1.SUMA\n2.RESTA\n3.MULTIPLICACION\n4.DIVISION\nIngrese El Numero:");
+    scanf("%f",&x);
+    if(x==1){
+        printf("Digite un numero:");
+        scanf("%f",&y);
+        printf("Digite un numero:");
+        scanf("%f",&z);
+        h=y+z;
+        printf("\nLa suma es:%f",h);
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    }
+    else if(x==2){
+        printf("Digite un numero:");
+        scanf("%f",&y);
+        printf("Digite un numero:");
+        scanf("%f",&z);
+        h=y-z;
+        printf("\nLa resta es:%f",h);
+    }
+    else if(x==3){
+        printf("Digite un numero:");
+        scanf("%f",&y);
+        printf("Digite un numero:");
+        scanf("%f",&z);
+        h=y*z;
+        printf("\nLa multiplicacion es:%f",h);
+    }
+    else if(x==4){
+        printf("Digite un numero:");
+        scanf("%f",&y);
+        printf("Digite un numero:");
+        scanf("%f",&z);
+        h=y/z;
+        printf("\nLa division es:%f",h);
+    }
+    else{
+        printf("\n#num3r0#inval1do#");
+    }
+    q=q+1;
+    printf("\n\n");
 
-# Precompiled Headers
-*.gch
-*.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+}
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+}
